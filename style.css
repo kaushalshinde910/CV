@@ -1,0 +1,146 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc8d4);
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff5733;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #6a0572;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.intro-text {
+    max-width: 600px;
+}
+
+.intro h1 span {
+    color: #ff6f61;
+}
+
+.intro .social-links a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.intro .social-links a:hover {
+    color: #007bff;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Section Headings */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #6a0572;
+}
+
+section span {
+    color: #ff6f61;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-bar {
+    width: 45%;
+    margin: 10px 0;
+}
+
+.progress {
+    background: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.progress-done {
+    background: #007bff;
+    width: 0;
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Add animation to progress bars */
+.progress-done[data-done] {
+    width: attr(data-done '%');
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Image */
+.intro-image img {
+    max-width: 400px;
+    border: 5px solid #ff6f61;
+}
